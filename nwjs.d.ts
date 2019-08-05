@@ -5,13 +5,13 @@ declare namespace nw {
         public readonly fullArgv: string[];
         public readonly filteredArgv: string[];
         public readonly startPath: string;
+        public readonly dataPath: string;
         public readonly manifest: any;
         clearCache(): void;
         clearAppCache(manifest_url: string): void;
         closeAllWindows(): void;
         crashBrowser(): void;
         crashRenderer(): void;
-        dataPath(): string;
         getProxyForURL(url: string): void;
         setProxyConfig(config: string, pac_url: string): void;
         quit(): void;
